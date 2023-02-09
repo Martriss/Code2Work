@@ -6,10 +6,10 @@ Projet transversal incluant tous les aspects du développement d'un site d'e-com
 - Conteneurisation Docker et orchestration Kubernetes
 ## API
 ### Installation
-Créez un fichier .env à partir du .env.example
-Utilisez `npm install` pour installer les dépendances  
-Lancez l'API avec `node server.js`
-L'API est accessible sur le port spécifié dans le .env
+Créez un fichier .env à partir du .env.example  
+Utilisez `npm install` pour installer les dépendances   
+Lancez l'API avec `node server.js`  
+L'API est accessible sur le port spécifié dans le .env  
 ### Routes
 Users :
 Methode | Route | Action
@@ -38,14 +38,14 @@ Lancez le site avec `ng s -o`
 Le site est accessible sur le port 4200
 
 ## Application
-L'application mobile à été développé avec Flutter et utilise Firebase.
+L'application mobile à été développé avec Flutter et utilise Firebase.  
 Elle permet la gestion de produits (Création, affichage, modification, suppression)
 
 ## Conteneurisation & orchestration
 ### Docker
-Créez un fichier .env à partir du .env.example à la racine du projet 
-Utilisez `docker compose up` à la racine du projet pour créer et conteneurisation une image de l'API
+Créez un fichier .env à partir du .env.example à la racine du projet  
+Utilisez `docker compose up` à la racine du projet pour créer et conteneurisation une image de l'API  
 L'API est accessible sur le port spécifié dans le .env
 ### Kubernetes
-Avec minikube, utilisez `minikube start` pour émuler un cluster
+Avec minikube, utilisez `minikube start` pour émuler un cluster  
 Utilisez `kubectl start -f kube` à la racine du projet pour lancer 3 pods de l'API et 1 de la DB.
