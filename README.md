@@ -3,8 +3,7 @@ Projet transversal incluant tous les aspects du développement d'un site d'e-com
 - API de gestion des utilisateurs et des produits (ExpressJS et Sequelize)
 - Front web Angular 15
 - Applicatif mobile Flutter
-- Conteneurisation Docker, orchestration Kubernetes, deployement sur AWS via Terraform
-
+- Conteneurisation Docker et orchestration Kubernetes
 ## API
 ### Installation
 Créez un fichier .env à partir du .env.example
