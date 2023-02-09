@@ -12,19 +12,19 @@ Utilisez `npm install` pour installer les dépendances
 Lancez l'API avec `node server.js`
 L'API est accessible sur le port spécifié dans le .env
 ### Routes
-| User |
+Users :
 Methode | Route | Action
 --- | --- | ---
-GET | user/me | Renvoie les infos de l'utilisateur connecté
-GET | user/ | Renvoie les infos de tous les utilisateurs
-GET | user/{user_id} | Renvoie les infos d'un utilisateur
-GET | user/{user_id}/products | Renvoie tous les produits d'un utilisateur
-POST | user/register | Ajoute un nouvel utilisateur
-POST | user/login | Connecte un utilisateur
-PUT | user/{user_id} | Modifie les infos d'un utilisateur
-DELETE | user/{user_id} | Supprime un utilisateur
+GET | users/me | Renvoie les infos de l'utilisateur connecté
+GET | users/ | Renvoie les infos de tous les utilisateurs
+GET | users/{user_id} | Renvoie les infos d'un utilisateur
+GET | users/{user_id}/products | Renvoie tous les produits d'un utilisateur
+POST | users/register | Ajoute un nouvel utilisateur
+POST | users/login | Connecte un utilisateur
+PUT | users/{user_id} | Modifie les infos d'un utilisateur
+DELETE | users/{user_id} | Supprime un utilisateur
 
-| Products |
+Products :
 Methode | Route | Action
 --- | --- | ---
 GET | products/ | Renvoie les infos de tous les produits
