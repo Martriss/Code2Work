@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "199714296319",
+    "project_id": "c2wk-fec24",
+    "storage_bucket": "c2wk-fec24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199714296319:android:48fb5bbc98d5808b8f57ca",
+        "android_client_info": {
+          "package_name": "com.example.appli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199714296319-dn5encbecf3e4f6j5b9agrurhccbn5pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9yJ8qqkv_aHB-JxdWAzUH0D6mJs2XqX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199714296319-dn5encbecf3e4f6j5b9agrurhccbn5pu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

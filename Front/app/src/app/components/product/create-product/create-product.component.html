@@ -1,0 +1,26 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Add new product</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input [(ngModel)]="name" type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input [(ngModel)]="price" type="number" class="form-control" id="price">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input [(ngModel)]="description" type="text" class="form-control" id="description">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark"
+            (click)="create(); modal.close('Save click')">Create</button>
+    </div>
+</ng-template>
+
+<button class="btn btn-primary" (click)="open(content)">Add new product</button>

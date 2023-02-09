@@ -1,0 +1,21 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Login</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+    </div>
+    <div class="modal-body">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input [(ngModel)]="username" type="username" class="form-control" id="username">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input [(ngModel)]="password" type="password" class="form-control" id="password">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="login(); modal.close()">Login</button>
+    </div>
+</ng-template>
+
+<button class="btn btn-primary me-1" (click)="open(content)">Login</button>

@@ -1,0 +1,14 @@
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input [(ngModel)]="user.username" type="username" class="form-control" id="username">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input [(ngModel)]="user.email" type="email" class="form-control" id="email">
+    </div>
+    <!-- <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input [(ngModel)]="password" type="password" class="form-control" id="password">
+    </div> -->
+    <app-edit-user [user]="user"></app-edit-user>

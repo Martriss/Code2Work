@@ -1,0 +1,23 @@
+<div class="d-flex m-2">
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+        <li ngbNavItem="profil">
+            <a ngbNavLink>Profil</a>
+            <ng-template ngbNavContent>
+                <app-profil [user]="user"></app-profil>
+            </ng-template>
+        </li>
+        <li ngbNavItem="products">
+            <a ngbNavLink>Products</a>
+            <ng-template ngbNavContent>
+                <app-user-products [user]="user"></app-user-products>
+            </ng-template>
+        </li>
+        <li ngbNavItem="orders">
+            <a ngbNavLink>Orders</a>
+            <ng-template ngbNavContent>
+                <p>Orders</p>
+            </ng-template>
+        </li>
+    </ul>
+    <div [ngbNavOutlet]="nav" class="ms-4"></div>
+</div>

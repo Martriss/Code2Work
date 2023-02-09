@@ -1,0 +1,11 @@
+<div class="w-75 m-auto">
+    <ngb-accordion [closeOthers]="true">
+        <ngb-panel *ngFor="let user of users" id="static-{{user.id}}" title="{{user.id}}. {{user.username}}">
+            <ng-template ngbPanelContent>
+                <p>Email: {{user.email}}</p>
+                <app-edit-user [user]="user"></app-edit-user>
+                <app-delete-user [user]="user"></app-delete-user>
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+</div>
